@@ -19,7 +19,7 @@ resource "aws_instance" "web" {
   instance_type   = "t2.micro"
   key_name        = "${aws_key_pair.testkey.key_name}"
   security_groups = ["${var.security_group}"]
-  user_data       = ""${file("${path.module}/Userdata/startup.sh")}"
+  user_data       = "${file("${path.module}/Userdata/startup.sh")}"
 
   tags {
     Name = "testinstance"
