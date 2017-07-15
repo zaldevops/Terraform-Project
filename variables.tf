@@ -11,6 +11,6 @@ variable "rootkeyname" {
   description = "my name of key pair"
 }
 
-variable "rootcidr" {
-  description = "this is my cidr for locking down security group{SSH}"
+variable "rootsecgrpcidr" {
+  description = "this is my cidr for my security group for only access to SSH"
 }

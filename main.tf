@@ -13,5 +13,5 @@ module "ec2" {
 module "security_group" {
   source = "./Security-Group"
 
-  my_cidr = "${var.rootcidr}"
+  my_cidr = "${var.rootsecgrpcidr}"
 }
